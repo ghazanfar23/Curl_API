@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": false,
+  "[php]": {
+    "editor.formatOnSave": true
+  },
+  "javascript.format.enable": false,
+  "prettier.semi": true
+}

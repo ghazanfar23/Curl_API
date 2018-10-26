@@ -1,0 +1,27 @@
+{
+  "name": "curl_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "interface.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghazanfar23/Curl_API.git"
+  },
+  "author": "Ghazanfar Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghazanfar23/Curl_API/issues"
+  },
+  "homepage": "https://github.com/ghazanfar23/Curl_API#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "lite-server": "^2.4.0",
+    "php": "0.0.1"
+  }
+}
