@@ -36,7 +36,7 @@ $(document).ready(function() {
 
   function send(clicked) {
     var pin = $("#selectPin").val()
-    if (clicked == "start") {
+    // if (clicked == "start") {
 
 
     // $("#dateval").text(startDate)
@@ -116,7 +116,7 @@ $(document).ready(function() {
 setTimeout(function() {
   send()
 }, 200)
-  }
+  // }
   // $("#alert").text("Hit");
 
 
