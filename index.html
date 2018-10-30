@@ -1,0 +1,120 @@
+<!-- <?php
+session_start();
+$response = $_SESSION['response'];
+?> -->
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <!-- <script type="text/javascript" src="jquery-2.0.3.min.js">
+    </script> -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js">
+    </script>
+
+    <script type="text/javascript" src="script.js">
+    </script>
+    <title>Calendar API</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark">
+        <a class="navbar-brand mr-auto" href="#">Distance Measure</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="container">
+
+        <div class="row row-content align-items-center card-columns">
+
+            <div class="col-12 col-sm-4 order-sm-first col-md-4 card-body text-center card card-dark">
+
+                <label for="selectPin" class="textcolor">Select Pin </label>
+
+                <select name="" id="selectPin">
+                    <option value="D13">D13</option>
+                    <option value="D12">D12</option>
+                    <option value="D11">D11</option>
+                    <option value="D10">D10</option>
+                    <option value="D9">D9</option>
+                    <option value="D8">D8</option>
+                    <option value="V1">V1</option>
+                    <option value="V2">V2</option>
+                    <option value="V3">V3</option>
+                    <option value="V4">V4</option>
+                    <option value="V5">V5</option>
+                    <option value="V6">V6</option>
+                </select>
+            </div>
+            <div class="col col-sm col-md-4 card-body text-center card card-dark">
+                <label class="col-sm-12 textcolor">Pin Live Value: <span id="pinval"></span></label>
+
+            </div>
+
+            <div class="col-12 col-sm-4 col-md-4 card-body text-center card card-success">
+
+                <label class="col-sm-12 textcolor">Distance: <span id="distance"></span></label>
+
+            </div>
+
+        </div>
+        <div class="container">
+
+
+            <div class="row row-content align-items-center card-columns">
+
+                <div class="col-12 col-sm-4 col-md-4 card-body text-center card card-dark">
+                    <label for="sensor_1_val" class="col-sm-6 card-text textcolor">Sensor 1 value: <span id="sensor_1_val"
+                            value="V2"></span></label>
+                </div>
+
+                <div class="col col-sm col-md-4 card-body text-center card card-dark">
+                    <label for="sensor_2_val" class="col-sm-6 card-text textcolor">Sensor 2 value: <span id="sensor_2_val"
+                            value="V4"></span></label>
+                </div>
+
+                <div id="detection" class="col col-sm col-md-4 card-body text-center card card-light">
+                    <label for="alert" class="col-sm-12 card-text textcolor">Object <span id="alert"></span></label>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous">
+            </script>
+</body>
+<script>
+
+</script>
+
+</html>
