@@ -79,9 +79,7 @@ $(document).ready(function() {
         $("#alert").css("color", "white")
         $("#detection").addClass("card-success")
       }
-      if (
-        result_1 > "30" &&
-        result_1 < "300" &&
+      if ((result_1 > "30" && result_1 < "300") &&
         (result > "30" && result < "300")
       ) {
         $("#alert").text("Detected on Both Sensors")
