@@ -62,12 +62,12 @@ $(document).ready(function() {
     $("#sensor_2_val").text(result)
     setTimeout(function() {
       send()
-    }, 20)
+    }, 50)
     // $("#detection").removeClass("card-light");
     // $("#detection").removeClass("card-success");
 
 
-    if (result_1 > "30" || result > "30") {
+    if (result_1 > "27" || result > "30") {
 
       $("#alert").text("Detected")
         $("#detection").removeClass("card-light")
@@ -84,7 +84,9 @@ $(document).ready(function() {
     var a = parseInt(result)
     var b = parseInt(result_1)
     var c = a + b
+    var d = c/100;
     $("#distance").text(c)
+    $("#distance_m").text(d)
   }
 
   send()
