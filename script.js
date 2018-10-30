@@ -62,18 +62,18 @@ $(document).ready(function() {
     $("#sensor_2_val").text(result)
     setTimeout(function() {
       send()
-    }, 50)
+    }, 20)
     if (
-      (result_1 > "30" && result_1 < "50") ||
-      (result > "30" && result < "50")
+      (result_1 > "30" && result_1 < "300") ||
+      (result > "30" && result < "300")
     ) {
-      if (result > "30" && result < "50") {
+      if (result > "30" && result < "300") {
         $("#alert").text("Detected Sensor 2")
         $("#detection").removeClass("card-light")
         $("#alert").css("color", "white")
         $("#detection").addClass("card-success")
       }
-      if (result_1 > "30" && result_1 < "50") {
+      if (result_1 > "30" && result_1 < "300") {
         $("#alert").text("Detected Sensor 1")
         $("#detection").removeClass("card-light")
         $("#alert").css("color", "white")
@@ -81,8 +81,8 @@ $(document).ready(function() {
       }
       if (
         result_1 > "30" &&
-        result_1 < "50" &&
-        (result > "30" && result < "50")
+        result_1 < "300" &&
+        (result > "30" && result < "300")
       ) {
         $("#alert").text("Detected on Both Sensors")
         $("#detection").removeClass("card-light")
